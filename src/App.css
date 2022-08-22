@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: gold;
+}
+
+.banner {
+    background-image: url("../public/banner2.jpg");
+}
+
+.bannerContent {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    justify-content: space-around;
+}
+
+.tagline {
+    display: flex;
+    height: 40%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.carousel {
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.carouselItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: white;
+}
+
+.Row :hover {
+    background-color: #131111;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    border-right: 2px solid gray;
+}
+
+.marketData {
+    margin: 80px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sidebar {
+        width: 100%;
+    }
+    .marketData {
+        flex-direction: column;
+        margin: 10px;
+    }
+    .container_chart {
+        width: 100%;
+        margin-top: 0;
+        padding: 20px;
+        padding-top: 0;
+    }
+}
